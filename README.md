@@ -2,6 +2,8 @@
 
 this simpel vue 3 application , browse recipes
 
-## setup & installation
+[Preview live](https://www.example.com)
 
-- `Yarn install & yarn dev`
+## Setup & installation
+
+`Yarn install & yarn dev`

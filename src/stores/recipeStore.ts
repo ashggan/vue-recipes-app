@@ -1,10 +1,10 @@
 import { defineStore } from 'pinia';
-import { feed } from '@/api/data';
+import { recipes } from '@/api/recipes';
 
 const useRecipeStore = defineStore('recipes', {
   state: () => {
     return {
-      recipes: feed
+      recipes: recipes
     };
   },
   actions: {}
