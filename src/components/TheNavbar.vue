@@ -14,12 +14,13 @@
                 </nav>
 
                 <div class="flex items-center gap-4">
-                    <div class="sm:flex sm:gap-4">
+                    <routerLink :to="{ name: 'new-recipe' }" class="sm:flex sm:gap-4">
+
                         <a class="block rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-teal-700 dark:hover:bg-teal-500"
                             href="/">
                             Add recipe
                         </a>
-                    </div>
+                    </routerLink>
 
                     <button
                         class="block rounded bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75 dark:bg-gray-800 dark:text-white dark:hover:text-white/75 md:hidden">
