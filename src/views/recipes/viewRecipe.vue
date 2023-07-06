@@ -9,7 +9,7 @@
                 <div class="sticky top-0">
                     <div class="mt-8 flex justify-between">
                         <div class="max-w-[35ch] space-y-2">
-                            <h1 class="text-xl font-bold sm:text-2xl">
+                            <h1 class="text-xl text-left font-bold sm:text-2xl">
                                 {{ recipe.name }}
                             </h1>
 
@@ -19,6 +19,7 @@
 
                     <div class="mt-4">
                         <div class="prose max-w-none">
+                            <p class="capitalize text-xl font-bold">ingredients</p>
                             <p v-for="ing in recipe.ingredients" :key="ing">
                                 - {{ ing }}
                             </p>
@@ -42,7 +43,7 @@ import type { Recipe } from '@/types/recipe'
 
 const route = useRoute()
 const slug = route.params.slug;
-const recipe = ref({})
+const recipe = ref(<Recipe>{})
 const store = useRecipeStore()
 const { recipes } = storeToRefs(store)
 
@@ -51,7 +52,6 @@ onMounted(async () => {
 })
 
 
-console.log(recipe.value)
 </script>
 
 <style scoped></style>

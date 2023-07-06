@@ -15,6 +15,5 @@ import cakeCard from '@/components/cakeCard.vue'
 const store = useRecipeStore()
 const { recipes } = storeToRefs(store)
 
-// console.log(recipes.value[0])
 </script>
  

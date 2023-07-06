@@ -1,8 +1,10 @@
 # Recipes appilcation
 
-this simpel vue 3 application , browse recipes
+this simpel vue 3 application , browse recipes , add new recipe.
 
-[Preview live](https://www.example.com)
+- tailwind CSS
+
+[Live Preview](https://delicious-recipes-vue.netlify.app/)
 
 ## Setup & installation
 
